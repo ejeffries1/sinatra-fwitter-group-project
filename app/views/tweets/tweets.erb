@@ -1,0 +1,9 @@
+<h1>Welcome,</h1>
+
+<form>
+<%@tweets.each do |tweet|%>
+    <li><%=tweet.user.username%>:<%=tweet.content%></li>
+<%end%>
+
+<input type="submit" value="submit">
+</form>
